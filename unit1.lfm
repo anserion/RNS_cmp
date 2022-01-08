@@ -1,0 +1,222 @@
+object Form1: TForm1
+  Left = 265
+  Height = 674
+  Top = 41
+  Width = 1009
+  AutoSize = True
+  BorderStyle = bsSingle
+  BorderWidth = 3
+  Caption = 'Сравнение чисел в СОК (Ионисян А.С.)'
+  ClientHeight = 674
+  ClientWidth = 1009
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  Scaled = False
+  object Label_P: TLabel
+    Left = 8
+    Height = 19
+    Top = 40
+    Width = 113
+    Caption = 'Диапазон СОК:'
+    ParentColor = False
+  end
+  object SG_P: TStringGrid
+    Left = 240
+    Height = 32
+    Top = 8
+    Width = 728
+    ColCount = 8
+    DefaultColWidth = 90
+    FixedRows = 0
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 1
+    ScrollBars = ssNone
+    TabOrder = 0
+  end
+  object Edit_res: TEdit
+    Left = 8
+    Height = 31
+    Top = 128
+    Width = 227
+    Color = clGrayText
+    ReadOnly = True
+    TabOrder = 1
+    Text = 'Нажмите кнопку "Сравнить"'
+  end
+  object BTN_P_set: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 224
+    Caption = 'Основания СОК'
+    OnClick = BTN_P_setClick
+    TabOrder = 2
+  end
+  object BTN_calc: TButton
+    Left = 8
+    Height = 26
+    Top = 168
+    Width = 224
+    Caption = 'Сравнить'
+    OnClick = BTN_calcClick
+    TabOrder = 3
+  end
+  object SG_ROM_digits: TStringGrid
+    Left = 8
+    Height = 130
+    Top = 224
+    Width = 496
+    ColCount = 9
+    DefaultColWidth = 52
+    RowCount = 2
+    ScrollBars = ssVertical
+    TabOrder = 4
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 19
+    Top = 200
+    Width = 271
+    Caption = 'ПЗУ (цифры 0-9 и степени 10 в СОК)'
+    ParentColor = False
+  end
+  object Edit_op1: TEdit
+    Left = 168
+    Height = 31
+    Top = 64
+    Width = 64
+    NumbersOnly = True
+    TabOrder = 5
+    Text = '0'
+  end
+  object Label9: TLabel
+    Left = 8
+    Height = 19
+    Top = 64
+    Width = 157
+    Caption = 'Первое число в ПСС:'
+    ParentColor = False
+  end
+  object Edit_op2: TEdit
+    Left = 168
+    Height = 31
+    Top = 96
+    Width = 64
+    NumbersOnly = True
+    TabOrder = 6
+    Text = '0'
+  end
+  object Label10: TLabel
+    Left = 8
+    Height = 19
+    Top = 96
+    Width = 154
+    Caption = 'Второе число в ПСС:'
+    ParentColor = False
+  end
+  object SG_RNS_sub_mrs: TStringGrid
+    Left = 512
+    Height = 424
+    Top = 242
+    Width = 488
+    ColCount = 9
+    DefaultColWidth = 52
+    FixedRows = 2
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 16
+    ScrollBars = ssVertical
+    TabOrder = 7
+  end
+  object Label3: TLabel
+    Left = 264
+    Height = 19
+    Top = 40
+    Width = 228
+    Caption = 'Перевод первого числа в СОК'
+    ParentColor = False
+  end
+  object SG_RNS_op1: TStringGrid
+    Left = 240
+    Height = 133
+    Top = 64
+    Width = 376
+    ColCount = 9
+    DefaultColWidth = 40
+    RowCount = 2
+    ScrollBars = ssVertical
+    TabOrder = 8
+  end
+  object SG_RNS_op2: TStringGrid
+    Left = 624
+    Height = 133
+    Top = 64
+    Width = 376
+    ColCount = 9
+    DefaultColWidth = 40
+    RowCount = 2
+    ScrollBars = ssVertical
+    TabOrder = 9
+  end
+  object Label12: TLabel
+    Left = 648
+    Height = 19
+    Top = 40
+    Width = 226
+    Caption = 'Перевод второго числа в СОК'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 512
+    Height = 19
+    Top = 224
+    Width = 346
+    Caption = 'Вычитание в СОК и перевод разности в ОПСС'
+    ParentColor = False
+  end
+  object Label_op1_op2_equ: TLabel
+    Left = 512
+    Height = 19
+    Top = 200
+    Width = 369
+    Caption = 'Проверка первого и второго чисел на равенство:'
+    ParentColor = False
+  end
+  object SG_ROM_small_numbers: TStringGrid
+    Left = 8
+    Height = 130
+    Top = 376
+    Width = 496
+    ColCount = 9
+    DefaultColWidth = 52
+    RowCount = 257
+    ScrollBars = ssVertical
+    TabOrder = 10
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 19
+    Top = 360
+    Width = 181
+    Caption = 'ПЗУ (числа 0-255 в СОК)'
+    ParentColor = False
+  end
+  object SG_ROM_P_inv: TStringGrid
+    Left = 8
+    Height = 138
+    Top = 528
+    Width = 496
+    ColCount = 9
+    DefaultColWidth = 52
+    RowCount = 9
+    ScrollBars = ssVertical
+    TabOrder = 11
+  end
+  object Label5: TLabel
+    Left = 8
+    Height = 19
+    Top = 512
+    Width = 321
+    Caption = 'ПЗУ (обратные к основаниям числа в СОК)'
+    ParentColor = False
+  end
+end
